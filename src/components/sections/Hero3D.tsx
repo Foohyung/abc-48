@@ -40,7 +40,7 @@ export default function Hero3D() {
       <div 
         ref={bgRef}
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat w-[110%] h-[110%] -left-[5%] -top-[5%]"
-        style={{ backgroundImage: "url('/images/hero_bright.png')" }}
+        style={{ backgroundImage: "url('/images/hero-banner.jpg')" }}
       />
       
       {/* Overlay gradient for text readability and transition to next section */}
