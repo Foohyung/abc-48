@@ -41,7 +41,7 @@ export const hotelInfo = {
   name: "ABC@48 Ladprao",
   phone: "085-195-6662",
   email: "abc48hs@gmail.com",
-  line: "@ivorygrand",
+  line: "@abc48hs",
   facebook: "https://www.facebook.com/share/18wtu6uY4U/?mibextid=wwXIfr",
   instagram: "https://www.instagram.com/abc48hotelladprao?igsh=MTBlNTl0ZzVnMWt1MA==",
   checkIn: "14:00",
