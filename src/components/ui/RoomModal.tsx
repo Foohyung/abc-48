@@ -57,28 +57,33 @@ export default function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
         </button>
 
         {/* Image Gallery */}
-        <div className="w-full md:w-[55%] h-[40vh] md:h-full relative bg-cream overflow-hidden group">
-          <img 
-            src={room.images[activeImage]} 
-            alt={room.name[locale]} 
-            className="w-full h-full object-cover transition-opacity duration-500"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              target.parentElement!.classList.add('bg-gradient-to-br', 'from-cream', 'to-smoke-light');
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/60 via-transparent to-transparent opacity-60 pointer-events-none" />
+        <div className="w-full md:w-[55%] h-[40vh] md:h-full flex flex-col bg-deep-charcoal overflow-hidden group">
           
-          {/* Thumbnails */}
+          {/* Main Image Container */}
+          <div className="relative flex-grow w-full overflow-hidden">
+            <img 
+              src={room.images[activeImage]} 
+              alt={room.name[locale]} 
+              className="w-full h-full object-cover transition-opacity duration-500"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                target.parentElement!.classList.add('bg-gradient-to-br', 'from-cream', 'to-smoke-light');
+              }}
+            />
+            {/* Top gradient for close button visibility */}
+            <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-deep-charcoal/50 to-transparent pointer-events-none" />
+          </div>
+          
+          {/* Thumbnails Strip */}
           {room.images.length > 1 && (
-            <div className="absolute bottom-4 left-0 right-0 flex justify-start md:justify-center gap-2 px-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-2">
+            <div className="w-full bg-charcoal border-t border-white/10 flex justify-start md:justify-center gap-2 p-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
               {room.images.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveImage(idx)}
-                  className={`w-16 h-12 md:w-20 md:h-14 shrink-0 snap-center rounded-none overflow-hidden border transition-all duration-500 ${
-                    activeImage === idx ? "border-gold scale-110 shadow-xl" : "border-white/30 opacity-60 hover:opacity-100"
+                  className={`w-16 h-12 md:w-20 md:h-14 shrink-0 snap-center rounded-sm overflow-hidden border transition-all duration-300 ${
+                    activeImage === idx ? "border-gold opacity-100 shadow-[0_0_10px_rgba(197,160,89,0.3)]" : "border-transparent opacity-50 hover:opacity-100"
                   }`}
                 >
                   <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover" />
