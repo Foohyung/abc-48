@@ -31,7 +31,7 @@ export const bookingApps: BookingApp[] = [
   {
     id: "expedia",
     name: "Expedia",
-    url: "https://www.expedia.com",
+    url: "https://www.expedia.co.th/en/Bangkok-Hotels-ABCHOTEL-LADPRAO36.h89145842.Hotel-Information",
     color: "#FBCE04",
     logo: "/images/booking/expedia.svg",
   },
