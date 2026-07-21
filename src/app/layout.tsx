@@ -15,10 +15,10 @@ const notoSansThai = Noto_Sans_Thai({
 });
 
 export const metadata: Metadata = {
-  title: "The Ivory Grand Hotel | Where Elegance Meets Comfort",
+  title: "ABC@48 Ladprao | Where Elegance Meets Comfort",
   description:
-    "Experience unparalleled luxury at The Ivory Grand Hotel in the heart of Bangkok. Premium rooms, world-class amenities, and exceptional service.",
-  keywords: ["hotel", "bangkok", "luxury", "ivory grand", "โรงแรม", "กรุงเทพ"],
+    "Experience unparalleled luxury at ABC@48 Ladprao in the heart of Bangkok. Premium rooms, world-class amenities, and exceptional service.",
+  keywords: ["hotel", "bangkok", "luxury", "abc@48 ladprao", "โรงแรม", "กรุงเทพ"],
 };
 
 export default function RootLayout({
