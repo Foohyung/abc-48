@@ -48,7 +48,7 @@ export default function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
         {/* Close Button */}
         <button 
           onClick={onClose}
-          className="absolute top-6 right-6 z-[110] w-12 h-12 bg-white/70 backdrop-blur-md rounded-none border border-smoke-light flex items-center justify-center text-charcoal hover:bg-charcoal hover:text-ivory transition-all duration-500 shadow-lg"
+          className="absolute top-3 right-3 md:top-6 md:right-6 z-[110] w-10 h-10 md:w-12 md:h-12 bg-white/70 backdrop-blur-md rounded-none border border-smoke-light flex items-center justify-center text-charcoal hover:bg-charcoal hover:text-ivory transition-all duration-500 shadow-lg"
           aria-label={t("close")}
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,16 +68,16 @@ export default function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
               target.parentElement!.classList.add('bg-gradient-to-br', 'from-cream', 'to-smoke-light');
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/60 via-transparent to-transparent opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/60 via-transparent to-transparent opacity-60 pointer-events-none" />
           
           {/* Thumbnails */}
           {room.images.length > 1 && (
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 px-4">
+            <div className="absolute bottom-4 left-0 right-0 flex justify-start md:justify-center gap-2 px-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-2">
               {room.images.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveImage(idx)}
-                  className={`w-20 h-14 rounded-none overflow-hidden border transition-all duration-500 ${
+                  className={`w-16 h-12 md:w-20 md:h-14 shrink-0 snap-center rounded-none overflow-hidden border transition-all duration-500 ${
                     activeImage === idx ? "border-gold scale-110 shadow-xl" : "border-white/30 opacity-60 hover:opacity-100"
                   }`}
                 >
@@ -89,7 +89,7 @@ export default function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
         </div>
 
         {/* Details */}
-        <div className="w-full md:w-[45%] p-10 md:p-14 lg:p-20 overflow-y-auto h-full flex flex-col bg-ivory relative">
+        <div className="w-full md:w-[45%] p-6 sm:p-10 md:p-14 lg:p-20 overflow-y-auto h-full flex flex-col bg-ivory relative">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-transparent" />
           
           <span className="text-gold tracking-[0.3em] uppercase text-[10px] font-semibold mb-4 block">
