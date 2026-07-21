@@ -47,6 +47,6 @@ export const hotelInfo = {
   checkIn: "14:00",
   checkOut: "12:00",
   googleMapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.6097755283035!2d100.56724!3d13.730493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ee109de4035%3A0x41c1e70e9b5f2c0!2sSukhumvit%20Road!5e0!3m2!1sen!2sth!4v1700000000000!5m2!1sen!2sth",
-  googleMapsLink: "https://maps.google.com/?q=13.730493,100.56724",
+    "https://www.google.com/maps/place/ABC@48/@13.7931491,100.5844175,17z/data=!3m1!4b1!4m9!3m8!1s0x30e29d07c11bd547:0x56cc5187f6176f4!5m2!4m1!1i2!8m2!3d13.7931491!4d100.5844175!16s%2Fg%2F11t633v5cg!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+  googleMapsLink: "https://maps.app.goo.gl/qpWtcPKHVugqmV7V6?g_st=al",
 };
