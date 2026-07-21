@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import MagneticButton from "@/components/ui/MagneticButton";
 
-export default function Hero3D() {
+export default function Hero() {
   const t = useTranslations("hero");
   const contentRef = useRef<HTMLDivElement>(null);
 

@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Hero3D from "@/components/sections/Hero3D";
+import Hero from "@/components/sections/Hero";
 import Highlights from "@/components/sections/Highlights";
 import RoomGallery from "@/components/sections/RoomGallery";
 import Experiences from "@/components/sections/Experiences";
@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       
       <main className="flex flex-col min-h-screen">
-        <Hero3D />
+        <Hero />
         <Highlights />
         <Experiences />
         <RoomGallery />

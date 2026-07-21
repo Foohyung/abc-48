@@ -97,22 +97,6 @@ p, span, div {
 }
 
 /* ============================================
-   3D Tilt Card Effect
-   ============================================ */
-.tilt-card {
-  transform-style: preserve-3d;
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.tilt-card:hover {
-  transform: perspective(1200px) rotateX(4deg) rotateY(-4deg) scale(1.02);
-}
-
-.tilt-card-content {
-  transform: translateZ(30px);
-}
-
-/* ============================================
    Shimmer Animation (loading placeholder)
    ============================================ */
 @keyframes shimmer {
@@ -147,18 +131,6 @@ p, span, div {
 
 .animate-fade-in-up {
   animation: fadeInUp 1s cubic-bezier(0.21, 0.47, 0.32, 0.98) forwards;
-}
-
-/* ============================================
-   Floating Animation (for 3D elements)
-   ============================================ */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
-
-.animate-float {
-  animation: float 4s ease-in-out infinite;
 }
 
 /* ============================================
