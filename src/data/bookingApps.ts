@@ -39,8 +39,8 @@ export const bookingApps: BookingApp[] = [
 
 export const hotelInfo = {
   name: "ABC@48 Ladprao",
-  phone: "+66 2 123 4567",
-  email: "info@ivorygrand.com",
+  phone: "085-195-6662",
+  email: "abc48hs@gmail.com",
   line: "@ivorygrand",
   facebook: "https://facebook.com/ivorygrand",
   instagram: "https://instagram.com/ivorygrandhotel",
