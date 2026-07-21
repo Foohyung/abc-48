@@ -36,12 +36,12 @@ export default function RoomCard({ room, onClick }: RoomCardProps) {
         
         {/* Price Tag */}
         <div className="absolute bottom-5 left-5 right-5 flex justify-between items-end z-30 pointer-events-none">
-          <h3 className="text-xl font-serif font-semibold tracking-wide drop-shadow-lg text-white">
+          <h3 className="text-xl font-serif font-semibold tracking-wide drop-shadow-lg !text-white">
             {room.name[locale]}
           </h3>
           <div className="text-right drop-shadow-lg">
             <span className="text-xl font-serif font-bold text-gold">฿{room.price.toLocaleString()}</span>
-            <span className="text-[10px] ml-1 uppercase tracking-wider text-white/90">{t("perNight")}</span>
+            <span className="text-[10px] ml-1 uppercase tracking-wider !text-white/90">{t("perNight")}</span>
           </div>
         </div>
       </div>
