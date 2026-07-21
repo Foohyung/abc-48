@@ -114,6 +114,36 @@ export default async function RoomDetailPage({
               </ul>
             </div>
 
+            {/* Policies & Info */}
+            <div>
+              <h2 className="text-sm font-serif text-charcoal mb-8 tracking-[0.3em] uppercase flex items-center gap-4">
+                <span className="w-12 h-[1px] bg-gold" />
+                {currentLocale === "th" ? "นโยบายและข้อมูลเพิ่มเติม" : "Policies & Info"}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 border border-smoke-light/30 bg-white">
+                <div>
+                  <h3 className="font-semibold text-charcoal mb-4 tracking-wider uppercase text-xs">
+                    {currentLocale === "th" ? "เวลาเช็คอิน / เช็คเอาท์" : "Check-in / Check-out"}
+                  </h3>
+                  <ul className="space-y-3 text-smoke-dark text-sm">
+                    <li><span className="font-medium text-gold">{currentLocale === "th" ? "เช็คอิน:" : "Check-in:"}</span> {currentLocale === "th" ? "ตั้งแต่ 14:00 น." : "From 14:00"}</li>
+                    <li><span className="font-medium text-gold">{currentLocale === "th" ? "เช็คเอาท์:" : "Check-out:"}</span> {currentLocale === "th" ? "ภายใน 12:00 น." : "Until 12:00"}</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-charcoal mb-4 tracking-wider uppercase text-xs">
+                    {currentLocale === "th" ? "นโยบายที่พัก" : "Hotel Policies"}
+                  </h3>
+                  <ul className="space-y-3 text-smoke-dark text-sm">
+                    <li>• {currentLocale === "th" ? "ห้องพักปลอดบุหรี่ทั้งหมด" : "100% Non-smoking rooms"}</li>
+                    <li>• {currentLocale === "th" ? "ไม่อนุญาตให้นำสัตว์เลี้ยงเข้าพัก" : "Pets are not allowed"}</li>
+                    <li>• {currentLocale === "th" ? "มีบริการที่จอดรถฟรี" : "Free parking available"}</li>
+                    <li>• {currentLocale === "th" ? "แผนกต้อนรับบริการ 24 ชั่วโมง" : "24-hour Front Desk"}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           {/* Sidebar Booking Form */}
