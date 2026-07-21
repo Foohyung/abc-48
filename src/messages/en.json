@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "rooms": "Rooms",
+    "location": "Location",
+    "booking": "Booking",
+    "contact": "Contact",
+    "language": "TH"
+  },
+  "hero": {
+    "subtitle": "Where Elegance Meets Comfort",
+    "tagline": "Experience unparalleled luxury and comfort in the heart of Bangkok",
+    "cta": "Book Now",
+    "explore": "Explore More"
+  },
+  "highlights": {
+    "title": "About Us",
+    "subtitle": "Premium amenities for a perfect stay",
+    "pool": {
+      "title": "Swimming Pool",
+      "desc": "Panoramic rooftop infinity pool, open all day long"
+    },
+    "restaurant": {
+      "title": "Restaurant",
+      "desc": "Fine dining with our Michelin-starred chef"
+    },
+    "spa": {
+      "title": "Spa & Wellness",
+      "desc": "Full-service spa for total relaxation of all senses"
+    },
+    "gym": {
+      "title": "Fitness Center",
+      "desc": "State-of-the-art fitness center, open 24 hours"
+    }
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "subtitle": "Rooms designed for ultimate comfort with stunning city views",
+    "perNight": "/ night",
+    "sqm": "sqm",
+    "guests": "guests",
+    "viewDetails": "View Details",
+    "amenities": "Amenities",
+    "close": "Close"
+  },
+  "location": {
+    "title": "Location",
+    "subtitle": "Located in the heart of Bangkok, conveniently near BTS and MRT",
+    "address": "Address",
+    "addressText": "123/45 Sukhumvit Road, Khlong Tan, Khlong Toei, Bangkok 10110",
+    "nearby": "Nearby Places",
+    "nearbyPlaces": {
+      "bts": "BTS Phrom Phong — 5 min walk",
+      "emporium": "EmPorium Mall — 3 min walk",
+      "benchasiri": "Benchasiri Park — 7 min walk",
+      "hospital": "Samitivej Hospital — 10 min"
+    },
+    "getDirections": "Get Directions"
+  },
+  "booking": {
+    "title": "Book a Room",
+    "subtitle": "Book easily through your favorite platform",
+    "bookVia": "Book via"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are happy to serve you 24/7",
+    "phone": "Phone",
+    "email": "Email",
+    "line": "LINE",
+    "checkIn": "Check-in Time",
+    "checkOut": "Check-out Time",
+    "followUs": "Follow Us"
+  },
+  "footer": {
+    "description": "Experience luxury at ABC@48 Ladprao in the heart of Bangkok.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "copyright": "© 2026 ABC@48 Ladprao. All rights reserved."
+  }
+}
