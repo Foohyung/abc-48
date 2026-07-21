@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 import { RoomType } from "@/data/rooms";
 import { useState } from "react";
 
@@ -21,28 +22,26 @@ export default function RoomCard({ room, onClick }: RoomCardProps) {
     >
       {/* Image Container with Shimmer Fallback */}
       <div className="relative h-72 overflow-hidden bg-cream">
-        {!imgLoaded && <div className="absolute inset-0 shimmer" />}
-        <img 
+        {!imgLoaded && <div className="absolute inset-0 shimmer z-0" />}
+        <Image 
           src={room.images[0]} 
           alt={room.name[locale]} 
-          className={`w-full h-full object-cover transition-all duration-[1.2s] group-hover:scale-110 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className={`object-cover transition-all duration-[1.2s] group-hover:scale-110 z-10 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setImgLoaded(true)}
-          onError={(e) => {
-            const target = e.target as HTMLImageElement;
-            target.style.display = 'none';
-            target.parentElement!.classList.add('bg-gradient-to-br', 'from-cream', 'to-smoke-light');
-          }}
+          onError={() => setImgLoaded(true)}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent z-20 pointer-events-none" />
         
         {/* Price Tag */}
-        <div className="absolute bottom-5 left-5 right-5 flex justify-between items-end text-ivory">
-          <h3 className="text-xl font-serif font-semibold tracking-wide">
+        <div className="absolute bottom-5 left-5 right-5 flex justify-between items-end text-ivory z-30 pointer-events-none">
+          <h3 className="text-xl font-serif font-semibold tracking-wide drop-shadow-md">
             {room.name[locale]}
           </h3>
-          <div className="text-right">
+          <div className="text-right drop-shadow-md">
             <span className="text-xl font-serif font-bold text-gold">฿{room.price.toLocaleString()}</span>
-            <span className="text-[10px] ml-1 uppercase tracking-wider opacity-70">{t("perNight")}</span>
+            <span className="text-[10px] ml-1 uppercase tracking-wider opacity-90">{t("perNight")}</span>
           </div>
         </div>
       </div>

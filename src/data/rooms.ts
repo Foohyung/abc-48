@@ -46,7 +46,7 @@ export const rooms: RoomType[] = [
       th: ["WiFi ฟรี", "ทีวี 55 นิ้ว", "มินิบาร์", "อ่างอาบน้ำ", "เครื่องชงกาแฟ Nespresso", "เสื้อคลุมอาบน้ำ", "วิวเมือง"],
       en: ["Free WiFi", '55" Smart TV', "Minibar", "Bathtub", "Nespresso Machine", "Bathrobes", "City View"],
     },
-    images: ["/images/rooms/deluxe_new.png", "/images/rooms/superior-2.jpg"],
+    images: ["/images/rooms/superior_new.png", "/images/rooms/superior-2.jpg"],
   },
   {
     id: "grand",
@@ -65,7 +65,7 @@ export const rooms: RoomType[] = [
       th: ["WiFi ฟรี", "ทีวี 65 นิ้ว", "มินิบาร์", "จากุซซี่", "ห้องนั่งเล่น", "Nespresso", "เสื้อคลุมอาบน้ำ", "วิวเมือง"],
       en: ["Free WiFi", '65" Smart TV', "Minibar", "Jacuzzi", "Living Room", "Nespresso", "Bathrobes", "City View"],
     },
-    images: ["/images/rooms/suite_new.png", "/images/rooms/grand-2.jpg"],
+    images: ["/images/rooms/grand_new.png", "/images/rooms/grand-2.jpg"],
   },
   {
     id: "presidential",
@@ -84,6 +84,6 @@ export const rooms: RoomType[] = [
       th: ["WiFi ฟรี", "ทีวี 75 นิ้ว", "มินิครัว", "จากุซซี่", "ห้องนั่งเล่น", "ระเบียงส่วนตัว", "บัทเลอร์ 24 ชม.", "วิวเมือง 360°"],
       en: ["Free WiFi", '75" Smart TV', "Kitchenette", "Jacuzzi", "Living Room", "Private Balcony", "24h Butler", "360° City View"],
     },
-    images: ["/images/rooms/suite_new.png", "/images/rooms/presidential-2.jpg"],
+    images: ["/images/rooms/presidential_new.png", "/images/rooms/presidential-2.jpg"],
   },
 ];
